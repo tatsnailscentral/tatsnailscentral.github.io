@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="servwrapper">
+        <div class="servbeard">
+            <ul>
+                <li><a href="/index.html">Home » </a></li>
+                <li><a href="/services.html">Services » </a></li>
+                <li><a href="/manicure.html">Manicure in Pheonix</a></li>
+            </ul>
+        </div>
+
+        <div class="serv1">
+            <div class="serv1manicureimg1"></div>
+        </div>
+        <div class="serv2">
+
+            <h4>MANICURE IN PHOENIX</h4>
+            <p id="manicure">LIFE IS NOT PERFECT BUT YOUR MANICURE CAN BE!</p>
+
+            <p>Besides increasing your blood circulation, improving the health of your nails and de-stressing, a good manicure puts you in mode for success and great sense of well being. At Tat's Nails, we offer individual approach to each client, safe environment,
+                excellent service.
+            </p>
+            <p>Planning to book an appointment ? <br><a href="/gform.html"> Calculate</a> your service fee and receive the first visit discount</p>
+
+        </div>
+        <div class="serv3">
+            <h4>Manicures Types & Prices</h4>
+
+            <div class="pricelist">
+                <p>Traditional Manicure/Regular Polish ...................... 35 min / $30</p>
+                <p>Main Focus: Hygiene, Nail Care. </p>
+                <p> Regular Polish Removal (if any), cuticle remover & push back, cuticle oil, trimming, filing, buffing, hands exfoliating& moisturizing finished with regular polish if any. Time & cost-effective procedure that makes hands look well-groomed,
+                    slows down the growth of extra cuticles, softens hands skin.</p>
+
+            </div>
+
+            <div class="pricelist">
+                <p>Spa Manicure/Regular Polish .................................. 45 min / $40</p>
+                <p>Main Focus: Hygiene, Nail Care, Relaxation, Rejuvenating <br><br> Regular Polish Removal (if any), hands soak, cuticle work, cuticle oil, trimming, filing, buffing, exfoliation, massage, moisturizing finished with regular polish if any.
+                    A relaxing & rejuvenating procedure that makes hands look well-groomed, slows down the growth of extra cuticles. Improves blood circulation and hands skin tone.
+                </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Dip Powder Manicure ....................................... 1 hr 20 min / $45</p>
+                <p> Main Focus: Hygiene, Nail Care, No UV Curing <br><br> Old Material Removal (if any) with E-File. Cuticle work, trimming, filing, buffing, dip powder. More durable than gel polish, lasts up to 3 weeks.
+                </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Russian Manicure/Regular Polish Promo ........ 1 hr 30 min / $40</p>
+                <p>Main Focus: Hygiene, Advance Nail Care <br><br> Using various E-file extensions, extra cuticle removal is combined with detailed work on nail sidewalls & nail plates followed by polishing of the cuticles, oil application, and finished
+                    with regular polish if any. This popular in Europe procedure results in a long-lasting, up to 4 weeks, beautiful manicure that slows down the growth of extra cuticles, gently and efficiently eliminates rough skin around nail plates,
+                    and corrects their shape. Fits anyone who appreciates immaculate manicure.
+                </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Russian Manicure/Gel Polish Promo ............................ 2hr / $50</p>
+                <p>Main Focus: Hygiene, Advance Nail Care, Advanced Color Application & Nail Plate Leveling <br><br> Using various E-file extensions, extra cuticle removal is combined with detailed work on nail sidewalls & nail plates followed by polishing
+                    of the cuticles, oil application, and finished with Gel polish. This popular in Europe procedure results in a long-lasting up to 4 weeks, beautiful manicure that slows down the growth of extra cuticles, gently and efficiently eliminates
+                    rough skin around nail plates, levels the plates, and corrects their shape. Fits anyone who appreciates immaculate manicure and flawless beauty of gel color application.
+                </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Kid's Manicure (Age Under 12)/ Regular Polish ..... 25 min / $20</p>
+                <p>Main Focus: Hygiene, Nail Care <br><br> Regular Polish Removal (if any), cuticle push back, cuticle oil, trimming, filing, buffing, hands moisturizing finished with regular color application & free basic design of our choice on two fingers.
+                    A gentle procedure that makes child's hands look well-groomed and fun.
+                </p>
+            </div>
+
+        </div>
+        <div class="serv4">
+            <div class="serv1manicureimg2"></div>
+        </div>
+
+    </div>
+
+
+    <!--Calculate-->
+    <script>
+        fetch('calculate.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('calculateinclude').innerHTML = txt)
+    </script>
+    <div id="calculateinclude"></div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

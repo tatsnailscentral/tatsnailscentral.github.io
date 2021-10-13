@@ -1,150 +1,289 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-		<title>TatsNail</title>
-		
-		<!-- css -->
-		
-		<!--  google fonts  -->
-		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+<html lang="en">
 
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/custom.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script src="popup.js"></script>
+    <script src="https://kit.fontawesome.com/dd6225d123.js" crossorigin="anonymous"></script>
+    <script src="//code-ya.jivosite.com/widget/vl1O0s5JBs" async></script>
 
-	</head>
-	<body onload="countdown(year,month,day,hour,minute)">
-		<div class="body-wrapper">
+    <title>Tat's Nails on Central Phoenix</title>
 
-			<!--   begin of header section   -->
-			<section class="header" id="overlay-1">
-				<div class="header-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center">
-								<div class="theme-name">
-									<a href="#" class="title">TatsNail</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<div class="header-text">
-									<p class="service-text">NEW TAT'S NAIL SALON COMING SOON IN CENTRAL PHOENIX</p>
-									<p class="coming">coming soon</p>
-								</div>
-							</div>
-						</div>
+</head>
 
-						<!--  begin of counter  -->
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mleapgbg" method="post">
+                <p>Feedback form</p>
+                <fieldset id="fs-frm-inputs">
+                    <input type="text" name="name" id="full-name" required="" placeholder="Full name">
+                    <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                    <textarea style="margin: -1px; width: 301px; height: 90px;" name="complaint" id="complaint" placeholder="Your text" required=""></textarea><br>
+                </fieldset>
+                <div class="check">
+                    <input type="checkbox" name="policy">
+                    <p>I'm reading POLICY</p><a href="/policy.html">Read the Policies</a>
+                </div>
+                <input type="submit" value="Send">
+                <br>
+                <hr>
+                <p>Special Offer #2</p>
+                <p>Leave us a review on either Google, Facebook, or Instagram on the day of your service and receive one of our available designs on two finger nails for free during your next visit.</p>
+            </form>
+        </div>
+    </div>
 
-						<div class="row">
-							<div class="col-md-12">
-								<div class="numbers" id="count2"></div>
-							</div>
-							<div class="col-md-12 counter1 text-center" id="spacer1">
-								<div class="col-md-4 col-xs-3 col-sm-4 day numbers" id="dday"></div>
-								<div class="col-md-2 col-xs-3 col-sm-2 hr numbers" id="dhour"></div>
-								<div class="col-md-2 col-xs-3 col-sm-2 min numbers" id="dmin"></div>
-								<div class="col-md-4 col-xs-3 col-sm-4 sec numbers" id="dsec"></div>
-							</div>
-							<div class="col-md-12 counter2 text-center" id="spacer2">
-								<div class="col-md-4 col-xs-3 col-sm-4 day title" id="days">day</div>
-								<div class="col-md-2 col-xs-3 col-sm-2 hr title" id="hours">hr</div>
-								<div class="col-md-2 col-xs-3 col-sm-2 min title" id="minutes">min</div>
-								<div class="col-md-4 col-xs-3 col-sm-4 sec title" id="seconds">sec</div>
-							</div>
-						</div>
-						<!--  end of counter -->
-					</div> <!--  end of .container  -->
-				</div><!-- end of .header-wrapper  -->
-			</section>
-			<!--   end of header section     -->
 
-			<!--   begin of newsletter section  -->
-			<section class="newsletter text-center">
-				<div class="newsletter-wrapper">
-					<div class="container">
-						<div class="row">
-							<h2 class="newsletter-text">Get a discount on the opening day</h2>
-							<div class="col-md-8 col-md-offset-2">
-								<form action="https://formspree.io/f/mleapgbg" method="POST">
-	  								<div class="form-group">
-	    								<div class="input-group">
-	      									<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
-	      									<input name="_replyto" type="email" class="form-control" placeholder="Enter Your Email Here...">
-	    								</div>
-	    								<button type="submit" class="subsribe-btn">Subscribe Now</button>
-	  								</div>
-								</form>
-								<p class="spam">
-									<i class="fa fa-bookmark"></i>We'll never spam you.
-								</p>
-							</div>
-						</div>
-					</div><!--  end of .container  -->
-				</div> <!--  end of .newssletter-wrapper  -->
-			</section>
-			<!--   end of newsletter section  -->
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('headerinclude').innerHTML = txt)
+    </script>
+    <div id="headerinclude"></div>
 
-			<!--   begin of social-media section  -->
-			<section class="social-media text-center">
-				<div class="social-media-wrapper">
-					<div class="container">
-						<div class="row">
-							<h2 class="social-media-text">get updates from social media</h2>
-							<div class="col-md-8 col-md-offset-2">
-								<div class="social-links">
-									<a target="_blank" href="#" title="Facebook">
-										<i class="fa fa-facebook"></i>
-									</a>
-									</a>
-									<a target="_blank" href="#" title="Pinterest">
-										<i class="fa fa-pinterest"></i>
-									</a>
-									<a target="_blank" href="https://www.instagram.com/tatsnailscentral/" title="Instagram">
-										<i class="fa fa-instagram"></i>
-									</a>
-								</div>
-							</div>
-							<div class="clear-fix"></div>
-						</div>
-					</div>
-				</div><!--  end of .social-media-wrapper  -->
-			</section>
-			<!--   end of social-media section   -->
 
-			<!--   begin of footer  section  -->
-			<section class="footer">
-				<div class="footer-wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<p class="copy-right text-center">&copy; 2021 Bixit.ru. All rights reserved.</p>
-							</div>
-							<div class="col-md-6">
-								<p class="develop text-center">Developed by <a href="http://bixit.ru">Bixit.ru </a></p>
-							</div>
-						</div>
-					</div>
-				</div><!--  end of .footer-wrapper  -->
-			</section>
-			<!--   end of footer section  -->
-		</div>
-		
-		<!--  js files -->
+    <div class="content">
+        <div class="content1">
+            <div class="content1-offer">
+                <div class="content1-offer-h1">
+                    <h1>Boutique Nail Salon in North Phoenix</h1>
+                </div>
+                <div class="content1-offer-text1">
+                    <p>Calculate your service fee and receive the first visit discount</p>
+                </div>
+                <div class="content1-offer-text2">
+                    <p>Basic Manicure with regular lacquer application starting from $30.00</p>
+                    <p>Basic Pedicure with regular lacquer application starting from $50.00</p>
+                    <p>Warranty to 3 business days*</p>
+                </div>
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/timer.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	
-	</body>
+                <a href="/gform.html"><button>Claim My Discount</button></a>
+
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="content2-containercenter">
+                <div class="content2-container-left">
+                    <div class="content2-container-left-message">
+                        <p>NEW TAT'S NAIL SALON COMING SOON IN CENTRAL PHOENIX</p>
+                        <hr>
+                        <p>We are pleased to announce the opening of our second location in Central Phoenix in October 2021. Please visit us at 2302 N Central Ave., Ste. 7B, Phoenix, AZ 85004 </p>
+                        <a href="/contact.html"><button>More Detail</button></a>
+                    </div>
+                </div>
+                <div class="content2-container-right">
+                </div>
+            </div>
+        </div>
+
+        <div class="content3">
+            <div class="content3-wrapper">
+                <div class="content3-div1">
+                    <h2>
+                        Book your nail service <br> appointment with Tat's Now!
+                    </h2>
+                    <p>
+                        Welcome to Tat's Nails Salon In Phoenix. Here you will receive a wide spectrum of quality services from the best nail professionals in Phoenix. We specialize in Traditional and Russian manicures and pedicures techniques.
+                    </p>
+                    <p>
+                        Please fill the form with your contact information and we will be in touch to answer all your questions and book your appointment.
+                    </p>
+                </div>
+                <div class="content3-div2">
+                    <!--Form-->
+                    <script>
+                        fetch('form.html')
+                            .then(res => res.text())
+                            .then(txt => document.getElementById('form').innerHTML = txt)
+                    </script>
+                    <div id="form"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content4-background">
+            <div class="content4-wrapper">
+                <div class="content4-header1">
+                    <h3>Tat's Nail Salons</h3>
+                    <p>At Tat's we strive to provide our clients <br> with ideal manicure and pedicure</p>
+                </div>
+                <div class="content4-side1">
+
+                    <div class="pic-ctn">
+                        <img src="img/saloons/salooncarusel1.jpg" alt="" class="pic">
+                        <img src="img/saloons/salooncarusel2.jpg" alt="" class="pic">
+                        <img src="img/saloons/salooncarusel3.jpg" alt="" class="pic">
+                        <img src="img/saloons/salooncarusel6.jpg" alt="" class="pic">
+                        <img src="img/saloons/salooncarusel5.jpg" alt="" class="pic">
+                    </div>
+
+                </div>
+                <div class="content4-side2">
+                    <p>We currently operate out of the location in North Phoenix and another location in Central Phoenix is coming soon at the end of 2021.
+                    </p>
+                    <p>Our skilled and fully licensed nail technicians know the secrets of the profession, are wholeheartedly devoted to their work, and take time to deliver per your expectations.</p>
+                    <p>We utilize the best of modern materials and nail processing technologies and only use products from trusted brands.
+                    </p>
+                    <p>Our salons offer cozy atmosphere, beautiful interior design, comfortable seating - we have put a lot of effort into creating this overall enjoyable experience for our clients. </p>
+                    <p>Our prices are competitive and go along with the quality and the variety of the services offered at the best salons in Europe. </p>
+                    <p>We believe in safe practices & procedures and strictly follow the state of Arizona requirements for infection control, safety standards and client protection.</p>
+                    <p>More Detail <a href="/contact.html">About Our Salons</a></p>
+                </div>
+                <div class="content4-header2">
+                    <p>2 <br> Locations</p>
+                    <p>Rapidly <br> Growing Clientele Base</p>
+                    <p>85% <br>Client Retention Rate</p>
+                </div>
+                <div class="content4-side3">
+                    <p> We understand how important it is for parents to dedicate some time to themselves. We will keep your child busy when you purchase a manicure or a pedicure with regular lacquer application for them and we will give them a basic design
+                        on two finger or toenails for free. </p>
+                </div>
+                <div class="content4-side4">
+                    <img src="/img/kids.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="content4team">
+
+            <div class="content4team1">
+
+                <div class="card">
+                    <img src="/img/tatiana.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tatiana</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">-</h6>
+                        <p class="card-text"> Nail Pro & Salon Owner.</p>
+                        <a href="/tatiana.html" class="btn mr-2"> <i class="far fa-question-circle"></i> More</a>
+                        <a href="https://www.instagram.com/tatsnailscentral/" class="btn "><i class="fab fa-instagram"></i> Istagram</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--
+            <div class="content4team2">
+
+              <div class="card">
+                <img src="/img/tatiana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tatiana</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">CEO</h6>
+                  <p class="card-text"> Manicurist and salon owner.</p>
+                     <a href="/tatiana.html" class="btn mr-2"> <i class="far fa-question-circle"></i> More</a>
+                  <a href="https://www.instagram.com/tatsnailscentral/" class="btn "><i class="fab fa-instagram"></i> Istagram</a>
+                </div>
+              </div>
+
+            </div>
+          -->
+        </div>
+
+
+        <div class="content5-wrapper">
+            <div class="content5-div1">
+                <p>WHY CLIIENTS CHOOSE TAT'S NAILS?</p>
+                <img src="/img/logol.png">
+            </div>
+            <div class="content5-div2">
+                <p class="content5-bigp">01.</p>
+                <p class="content5-p1">We strictly adhere to disinfection controls and client safety procedures.</p>
+                <p class="content5-p2">All our implements, equipment, and surfaces undergo multi step disinfection and sanitation procedures per the AZ State and the Board Of Cosmetology requirements and guidelines. </p>
+            </div>
+            <div class="content5-div3">
+                <p class="content5-bigp">02.</p>
+                <p class="content5-p1">We use disposable nail supplies</p>
+                <p class="content5-p2">For the safety of our clients we use only disposable files, buffs, liners. </p>
+            </div>
+            <div class="content5-div4">
+                <p class="content5-bigp">03.</p>
+                <p class="content5-p1">Our Technical Approach.</p>
+                <p class="content5-p2">We work in both Traditional and advanced European Manicure & Pedicure Techniques.</p>
+            </div>
+
+            <div class="content5-div5">
+                <p class="content5-bigp">04.</p>
+                <p class="content5-p1">We Do Nail Art & Unique Designs</p>
+                <p class="content5-p2">Our nail professionals will do their best to bring your design vision to life. For additional ideas, please refer to the work previously done by our professionals and follow the links below.
+                    <br> <a href="https://www.instagram.com/tatsnailscentral/">Tatiana's Instragram</a> <br>
+
+                </p>
+            </div>
+            <div class="content5-div6">
+                <p class="content5-bigp">05.</p>
+                <p class="content5-p1">We Guarantee Quality Work</p>
+                <p class="content5-p2">In case there are any issues with the service received within 3 business days, the issue and we will attend the issue free of charge within the guarantee period. </p>
+            </div>
+            <div class="content5-div7">
+                <p class="content5-bigp">06.</p>
+                <p class="content5-p1">Our Nail Professionals</p>
+                <p class="content5-p2">While all our nail professionals are well versed in the nail industry and fully licensed, some of them also received training and certification in Russia and work using the unique Apparatus aka Hardware aka Russian technique which involves
+                    very detailed approach to a client's finger and toe nail cuticles as well as to thorough cleaning and polishing of the client's feet soles with special instruments using an electrical file. </p>
+            </div>
+            <div class="content5-div8">
+
+
+                <video autoplay="autoplay">
+          <source src="/img/Alla FB Review.mp4">
+         </video>
+
+
+            </div>
+        </div>
+
+        <div class=content6>
+            <div class="content6-wrapper">
+                <div class="content6-text">
+                    <p>Special Offer #1</p>
+                    <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+                </div>
+                <div class="content6-buton">
+                    <a href="/gform.html"><button>Claim My Discount</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="content8-wrapper">
+            <div class="content8-price">
+                <h4>Prices for the most popular services</h4>
+                <ul>
+                    <li>Manicure 6 types.................................................................................from $30.00 </li>
+                    <li>Pedicure 5 types...................................................................................from $50.00 </li>
+                    <li>Hard Gel & Polygel Extensions 3 lengths from...................................from $15.00 </li>
+                    <li>Nail art................................................................................................from $10.00 </li>
+                    <li>Additional Services...............................................................................from $5.00 </li>
+                    <li>For More Detail On Service Prices Click Here</li>
+                    <a href="/services.html"><button>Services</button></a>
+                </ul>
+            </div>
+            <div class="content8-img">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
 </html>

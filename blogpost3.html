@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Ten ways to strengthen your nails
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/blog3.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+
+        Wear gloves when doing household work. Even if the first few days are unusual, after 3-4 days you will not feel
+        them; <br>
+        apply cuticle oil daily - it strengthens nails and promotes their active growth;<br>
+        in cool weather, always wear gloves - this way you protect your hand skin from the negative effects of cold
+        air;<br>
+        pamper yourself with paraffin baths - you will see the result immediately after the first application;<br>
+        when performing a manicure, be sure to use a base - this way you will protect your nails from the effects of
+        acetone, resins and other harmful substances contained in varnishes;<br>
+        do not use scissors to shorten the length of your nails. Do this with files or buffs - this will prevent
+        delamination of nails;<br>
+        do nail baths at least once a week;<br>
+        monitor the humidity in the room - use humidifiers or put simple jars of water;<br>
+        before doing a manicure, always soften the cuticle with special products and oils;<br>
+        watch your diet, take vitamins.<br>
+        In fact, nail care is not that difficult. Just do it regularly and the result will not keep you waiting long!
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="servwrapper">
+        <div class="servbeard">
+            <ul>
+                <li><a href="/index.html">Home » </a></li>
+                <li><a href="/services.html">Services » </a></li>
+                <li><a href="/pedicure.html">Pedicure in Pheonix</a></li>
+            </ul>
+        </div>
+
+        <div class="serv1">
+            <div class="serv1pedicureimg1"></div>
+        </div>
+        <div class="serv2">
+
+            <h4>PEDICURE IN PHOENIX</h4>
+            <p id="manicure">PEDICURES ARE THE CURE FOR EVRYTHING. THAT'S WHY THEY'RE CALLED PEDI-CURES. </p>
+
+            <p>Pedicures are known to improve the appearance of your feet, result in healthy toenails and moisturized heels and soles. They increase blood circulation and lymphatic flow and overall make you feel great. Well groomed feet always make good
+                impression. We offer quality pedicure of your preference. Please visit our salon and experience this incredible procedure. At Tat's Nails, we offer individual approach to each client, safe environment, excellent service.
+            </p>
+            <p>Planning to book an appointment ? <br><a href="/gform.html"> Calculate</a> your service fee and receive the first visit discount</p>
+
+        </div>
+        <div class="serv3">
+            <h4>Pedicures Types & Prices </h4>
+
+            <div class="pricelist">
+                <p>Spa Pedicure/Regular Polish ......................................... 1hr / $50</p>
+                <p>Main Focus: Hygiene, Nail Care, Relaxation, Rejuvenating, Toenails & Foot Care</p>
+                <p>Regular Polish Removal (if any), feet soak, toenail cuticle work, cuticle oil, trimming, filing, buffing, exfoliating, massage, moisturizing finished with regular polish if any. This relaxing procedure makes feet look well-groomed and
+                    feel rejuvenated. Slows down the growth of extra cuticles. Improves blood circulation and feet skin tone. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Russian Pedicure/ Regular Polish Promo ........ 1 hr 30 min / $55</p>
+                <p>Main Focus: Hygiene, Advanced Toenails & Foot Care. Long lasting Results. </p>
+                <p>Using various E-file extensions, detailed cuticle work combined with special attention to toenails sidewalls & plates. Sanding e-file extensions are used for callus removal, smoothening, and polishing of heels and soles. Finished with
+                    regular polish, if any. This popular in Europe procedure results in a long-lasting, beautiful pedicure that slows down the growth of extra cuticles, gently and efficiently eliminates rough skin around toenail plates and corrects their
+                    shape, significantly smoothens feet soles. Fits anyone who appreciates immaculate pedicure.</p>
+            </div>
+
+            <div class="pricelist">
+                <p>Russian Pedicure/ Gel Polish Promo ........................... 2 hr / $65</p>
+                <p>Main Focus: Hygiene, Advance Toenail & Foot Care, Advanced Color Application. Long lasting Results.</p>
+                <p>Using various E-file extensions, detailed cuticle work combined with special attention to toenails sidewalls & plates. Sanding e-file extensions are used for callus removal, smoothening, and polishing of heels and soles. Finished with
+                    Gel Polish. This popular in Europe procedure results in a long-lasting, beautiful pedicure that slows down the growth of extra cuticles, gently and efficiently eliminates rough skin around toenail plates, levels the plates, and corrects
+                    their shape, significantly smoothens feet soles. Fits anyone who appreciates immaculate pedicure and flawless beauty of gel color application. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Russian Pedicure For Him ............................... 1 hr 30 min / $65</p>
+                <p>Main Focus: Hygiene, Advance Toenails & Foot Care. Long lasting Results. </p>
+                <p>Using various E-file extensions, detailed cuticle work combined with special attention to toenails sidewalls & plates. Sanding e-file extensions used for callus removal, smoothening, polishing of heels and soles. Finished with natural
+                    shine buffing, if desired. This time consuming, yet, much popular in Europe procedure gently removes cuticles, efficiently eliminates rough skin around toe nail plates and corrects their shape. Significantly smoothens skin of feet
+                    soles. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Kid's Pedicure/Regular Polish ................................ 25 min / $25</p>
+                <p>Main Focus: Hygiene, Nail Care</p>
+                <p>Regular Polish Removal (if any), feet soak, toenail cuticle work, cuticle oil, trimming, filing, buffing, moisturizing finished with regular polish, if any. A gentle procedure that makes a child's feet look well-groomed and fun.
+                </p>
+            </div>
+
+        </div>
+        <div class="serv4">
+            <div class="serv1pedicureimg2"></div>
+        </div>
+
+    </div>
+
+    <!--Calculate-->
+    <script>
+        fetch('calculate.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('calculateinclude').innerHTML = txt)
+    </script>
+    <div id="calculateinclude"></div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

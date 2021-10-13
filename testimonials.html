@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="instwrapper">
+        <div class="bloghead">
+            <h2>Testimonials</h2>
+            <p>From Google Maps</p>
+            <div class="blogimg"></div>
+        </div>
+        <div class="post1">
+            <div class="postcontainer">
+                <div class="imginst1">
+                    <div class="iconpost"><a href="https://goo.gl/maps/uVMfSMKsyXUymXDU9">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>Got my pedicure done here - great first impression. Tatiana (the owner) was super friendly, professional and navigated through the services to help to identify what type would work the best for my needs. Do appreciate that...
+                        <a href="https://goo.gl/maps/uVMfSMKsyXUymXDU9">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="post2">
+            <div class="postcontainer">
+                <div class="imginst2">
+                    <div class="iconpost"><a href="https://goo.gl/maps/MRBq28yYkcgF1QTD6">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>Tatiana is very professional and does perfect Russian Manicure and Pedicure. Look it up if you haven't heard of it. It's just perfect!
+                        <a href="https://goo.gl/maps/MRBq28yYkcgF1QTD6">Read more...</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="post3">
+            <div class="postcontainer">
+                <div class="imginst3">
+                    <div class="iconpost"><a href="https://goo.gl/maps/GnKnm3W2q3vPYNAL9">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>Amazing service! The owners and employees really stand by the quality of their work, and it shows! Will definitely be a repeat customer.Thank you Tanechka.
+                        <a href="https://goo.gl/maps/GnKnm3W2q3vPYNAL9">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="post4">
+            <div class="postcontainer">
+                <div class="imginst4">
+                    <div class="iconpost"><a href="">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>
+
+                        <a href="">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="post5">
+            <div class="postcontainer">
+                <div class="imginst5">
+                    <div class="iconpost"><a href="">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>
+                        <a href="">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="post6">
+            <div class="postcontainer">
+                <div class="imginst6">
+                    <div class="iconpost"><a href="">Open map</a></div>
+                </div>
+
+                <div class="datepost">
+                    <p>
+                        <a href="">Read more...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    -->
+    </div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

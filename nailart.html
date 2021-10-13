@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="servwrapper">
+        <div class="servbeard">
+            <ul>
+                <li><a href="/index.html">Home » </a></li>
+                <li><a href="/services.html">Services » </a></li>
+                <li><a href="/manicure.html">Nail Art in Pheonix</a></li>
+            </ul>
+        </div>
+
+        <div class="serv1">
+            <div class="serv1nailartimg1"></div>
+        </div>
+        <div class="serv2">
+
+            <h4>NAIL ART IN PHOENIX</h4>
+            <p id="manicure">YOU CAN'T BUY HAPPINESS BUT YOU CAN BUY NAIL ART AND THAT'S BASICALLT THE SAME THING!</p>
+
+            <p>Nail Art is all about your good spirit. While it is a creative outlet for your nail master, it is a true source of joy and affirmation for clients. This is what sets them apart. Be sure to share your creative ideas to us and we will do our
+                best to bring them to light! At Tat's Nails, we offer individual approach to each client, safe environment, excellent service.
+            </p>
+            <p>Planning to book an appointment ? <br><a href="/gform.html"> Calculate</a> your service fee and receive the first visit discount</p>
+
+        </div>
+        <div class="serv3">
+            <h4>Nail Art </h4>
+
+            <div class="pricelist">
+                <p>Basic Design .......................................................... 10 min / $10</p>
+                <p> Elegant, simple, yet artsy</p>
+                <p>Made with Gel Polish on Two or Fewer Fingers. Elegant simple yet artsy. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Free Style Design .................................................. 20 min / $20</p>
+                <p> Creativity rules and something amazing comes out. </p>
+                <p>Nail Art with Gel Polish and added materials. Made on Five or fewer Fingers. Creativity rules and something amazing comes out.</p>
+            </div>
+
+            <div class="pricelist">
+                <p>French ................................................................... 20 min / $15</p>
+                <p> Classy or even fun if you wish to play with colors.</p>
+                <p>Any Gel Polish Color on free edges of nails. Made on Ten or Fewer Fingers. Classy or even fun if you wish to play with colors.</p>
+            </div>
+
+        </div>
+        <div class="serv4">
+            <div class="serv1nailartimg2"></div>
+        </div>
+
+    </div>
+
+
+    <!--Calculate-->
+    <script>
+        fetch('calculate.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('calculateinclude').innerHTML = txt)
+    </script>
+    <div id="calculateinclude"></div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

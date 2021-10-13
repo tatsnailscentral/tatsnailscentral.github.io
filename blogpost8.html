@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Manicure-2021: the main trends of the year
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/imgpost8.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+
+    <div class="blogpost">
+      <p>
+        1 Bright stripes
+        <br>
+        <br>
+        Manicure and makeup in the spirit of the impressionists continues to excite the imagination of stylists and
+        make-up artists (only the abstract artists are more popular today). We advise you not to complicate the task:
+        arm yourself with multi-colored varnishes and a manicure brush and repeat the look from the Pyer Moss show. One
+        and a half dozen bright careless strokes applied along (in height) the nail plate will not only look stylish and
+        impressive, but also visually lengthen the fingers.
+        <br>
+        <br>
+        <img src="/img/brightstripes1.jpg">
+        <br>
+        <br>
+        A more recent solution is to keep alignment not with the classics of the past, but with their contemporaries.
+        Decorate your nails with this graffiti painting!
+        <br>
+        <br>
+        <img src="/img/brightstripes2.jpg">
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div class="blogpost">
+      <p>
+        2. Points
+        <br>
+        <br>
+        Nails painted with a delicate varnish and decorated with delicate white dots.
+        <br>
+        <br>
+        <img src="/img/points.jpg">
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div class="blogpost">
+      <p>
+        3. Negative space manicure
+        <br>
+
+        <br>
+        <img src="/img/negative.jpg">
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div class="blogpost">
+      <p>
+        4. Colored French
+        <br>
+        <br>
+        The main part of the nail plate is painted over with light polish or gel polish, and the tips are highlighted in
+        any other color. Nail art like this will look great long nails.
+        <br>
+        <br>
+        <img src="/img/coloredfrench.jpg">
+        <br>
+      </p>
+    </div>
+
+    <div class="blogpost">
+      <p>
+        5. Bold nail art
+        <br>
+        <br>
+
+        <img src="/img/boldart.jpg">
+        <br>
+      </p>
+    </div>
+
+    <div class="blogpost">
+      <p>
+        6. Animal print
+        <br>
+        <br>
+        <img src="/img/animalprint.jpg">
+        <br>
+      </p>
+    </div>
+
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+
+    <div class="informconvert">
+        <div class="informtext">
+
+            <h4>
+                General Rules
+            </h4>
+
+            <p>
+
+                We are not liable for damages to any of your belongings, property, or self.<br> No food is allowed inside the salon.<br> We reserve the right to refuse services to anyone.<br> Refunds:
+                <br> We issue No refunds on any services. However, we allow for three business days for clients to notify us about any issues with the service and for us to remedy the issue for free. <br> Late Arrivals: We understand life happens. Please
+                give us a courtesy call if you are running up to 15 minutes late. In case you are late for more than 15 minutes, call to reschedule for another time. <br> Forms Of Payments:<br> Visa, Master Card, Cash, Zelle at tatsnailscentral@gmail.com,
+                Venmo <br> <br> Cancellations & No Shows:<br>
+                <br> Please give us a cancellation notice no later than 24 hours in advance.
+                <br> In case of Late Cancelations & No Shows, we will require a non-refundable deposit of $20.00 in order to book your next appointment. <br> Locations:
+                <br>
+                <br> Currently, we operate from a fully licensed home-based boutique salon in North Phoenix, at Thunderbird & Cave Creek Rd. and we see clients by appointment only. <br>
+                <br>
+                <br> We are excited about another location coming soon in Central Phoenix at<br> 2302 N Central Ave,<br> Phoenix, AZ 85004<br>
+
+            </p>
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Men's manicure: features and trends
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/imgpost6.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+        But no, modern men do not think so at all. Neat and well-groomed hands have long been a must have for a strong
+        half of humanity. What is this beauty treatment for men and how does it differ from the classic women's
+        manicure? Manicure for men is a hygienic hand care procedure for men, after which they become neat and
+        well-groomed. It should not be neglected by those for whom the appearance of the hands is extremely important,
+        as part of the entire image of a person. In addition, regular manicure procedures will help prevent various nail
+        problems.
+        <br>
+        <br>
+        Unlike women's manicure, men's manicure traditionally does not use colored varnishes or gel varnishes, but
+        special care products are used. Such a manicure consists in the processing and removal of the cuticle, shaping
+        the nails, polishing them and in the care procedures.
+        <br>
+        <br>
+        Although there are exceptions to the rules - more and more often today you can find drawings on men's nails.
+        Men's manicure in 2021 is already less discreet than it was before. Coverage and design is an increasingly
+        popular manicure innovation for men. The design of a man's manicure looks masculine and has nothing to do with
+        glamor. So, drawings "under a tattoo", black drawings, black and white graphics and minimalism are relevant.
+        Don't be afraid to experiment, because trends in men's manicure have changed a lot! Go For It!
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

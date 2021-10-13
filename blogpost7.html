@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Hardware aka Russian aka E-File aka Dry Manicure or Pedicure Technique
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/imgpost7.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+
+        The possibilities of filing bits widely range. They allow to remove overgrown cuticles, smooth the surface of
+        the nail, sand and give it a soft natural shine, remove gel polish, extended nails without soaking. Performed by
+        a skilled nail pro, this E-File technology is the least traumatic procedure that is carried out “dry” without
+        the use of cutting tools. Due to the fact that there is no need to soak nails before using the drill bits, they
+        become less dry and brittle over time. In addition, the cuticle grows more slowly, which allows the hands to
+        remain neat and well-groomed for a longer time. The same principle is applied to a pedicure plus removal of
+        calluses and detailed polishing of skin on feet soles.
+
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

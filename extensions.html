@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="servwrapper">
+        <div class="servbeard">
+            <ul>
+                <li><a href="/index.html">Home » </a></li>
+                <li><a href="/services.html">Services » </a></li>
+                <li><a href="/manicure.html">Nail extensions</a></li>
+            </ul>
+        </div>
+
+        <div class="serv1">
+            <div class="serv1extensionsimg1"></div>
+        </div>
+        <div class="serv2">
+
+            <h4>NAIL EXTENSIONS IN PHOENIX</h4>
+            <p id="manicure">LIFE IS SHORT, BUT YOUR NAILS SHOULDN'T BE</p>
+
+            <p>In addition to being a fashion accessory, nail extensions provide a protective covering to natural nails. They also can transform almost any natural nail imperfection to a beautiful and flawless look and serve as an excellent base for creating
+                nail art. It is very important that you see an adept professional and a good salon for applying extensions because they need a professional for their application and removal. Please select your service and let our trained team help you
+                achieve your desired length! At Tat's Nails, we offer individual approach to each client, safe environment, excellent service. </p>
+            <p>Planning to book an appointment ? <br><a href="/gform.html"> Calculate</a> your service fee and receive the first visit discount</p>
+
+        </div>
+        <div class="serv3">
+            <h4>Hard Gel & Polygel Extensions </h4>
+
+            <div class="pricelist">
+                <p>Short ........................................................................... 30 min / 15$</p>
+                <p>Shapes: Square, Squoval, Oval, Rounded Shapes. Gel Polish Only. </p>
+                <p>
+                    Extensions are done after a manicure using Odorless Builder Gels or Polygels. Shapes are achieved using upper forms or tips depending on individual nail condition, length, preference. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Medium ...................................................................... 35 min / 20$</p>
+                <p> Shapes: Square, Squoval, Oval, Rounded, Almond, Mountain Peak, Ballerina Shapes. Gel Polish Only.
+                </p>
+                <p>Square, Squoval, Oval, Rounded, Almond, Mountain Peak, Ballerina Shapes. Gel Polish Only. Extensions are done after a manicure using Odorless Builder Gels or Polygels. Shapes are achieved using upper forms or tips depending on individual
+                    nail condition, length, preference. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Long ........................................................................... 40 min / 25$</p>
+                <p>Shapes: Square, Squoval, Oval, Rounded, Almond, Mountain Peak, Ballerina Shapes, Stiletto. Gel Polish Only. </p>
+                <p>Square, Squoval, Oval, Rounded, Almond, Mountain Peak, Ballerina Shapes, Stiletto. Gel Polish Only. Extensions are done after a manicure using Odorless Builder Gels or Polygels. Shapes are achieved using upper forms or tips depending on
+                    individual nail condition, length, preference. </p>
+            </div>
+
+        </div>
+        <div class="serv4">
+            <div class="serv1extensionsimg2"></div>
+        </div>
+
+    </div>
+    <div class="content6">
+        <div class="content6-wrapper">
+            <div class="content6-text">
+                <p>Have you been to Tat's Nails Yet ? </p>
+                <p>Calculate your discount on your first visit right here</p>
+            </div>
+            <div class="content6-buton">
+                <button>Claim My Discount</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

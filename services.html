@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script src="popup.js"></script>
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="serviceshome-wrapper">
+        <div class="serviceshome-sheader">
+            <h3>SERVICES TAT'S NAILS</h3>
+            <p>Our team of licenzed and highly trained professionals is looking forward to making your magical transformation come true. We offer a wide array of nail services such as manicures, pedicures, nail extensions and etc. </p>
+            <p>Planning to book an appointment ? <a href="/gform.html">Calculate your service fee and receive the first visit
+          discount</a></p>
+        </div>
+        <div class="serviceshome-side1s">
+            <div class="serviceshome-side1s-img"></div>
+            <h5>MANICURE</h5>
+            <p>Traditional/SPA/Dip Powder/Russian <br>aka Hardware/Kid's - Select Yours!</p>
+            <a href="/manicure.html"><button>More Detail</button></a>
+        </div>
+        <div class="serviceshome-side2s">
+            <div class="serviceshome-side2s-img"></div>
+            <h5>PEDICURE</h5>
+            <p>SPA/Russian aka Hardware/Kid's - Select Yours!</p>
+            <a href="/pedicure.html"><button>More Detail</button></a>
+        </div>
+        <div class="serviceshome-side3s">
+            <div class="serviceshome-side3s-img"></div>
+            <h5>EXTENSIONS</h5>
+            <p>Hard Gel/Polygel - Select Yours!</p>
+            <a href="/extensions.html"><button>More Detail</button></a>
+        </div>
+        <div class="serviceshome-side4s">
+            <div class="serviceshome-side4s-img"></div>
+            <h5>NAIL ART</h5>
+            <p>Basic/Free Style/French- Select Yours!</p>
+            <a href="/nailart.html"><button>More Detail</button></a>
+        </div>
+        <div class="serviceshome-side5s">
+            <div class="serviceshome-side5s-img"></div>
+            <h5>ADDITIONAL SERVICES</h5>
+            <p>Gel Removal/Nail Repair/Hand or Foot Massage <br>Hot Stone Massage- Select Yours!</p>
+            <a href="/additional.html"><button>More Detail</button></a>
+        </div>
+        <div class="serviceshome-side6s">
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+
+</body>
+
+</html>

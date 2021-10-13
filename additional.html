@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="servwrapper">
+        <div class="servbeard">
+            <ul>
+                <li><a href="/index.html">Home » </a></li>
+                <li><a href="/services.html">Services »</a></li>
+                <li><a href="/manicure.html">Additional services</a></li>
+            </ul>
+        </div>
+
+        <div class="serv1">
+            <div class="serv1additionalimg1"></div>
+        </div>
+        <div class="serv2">
+
+            <h4>NAIL SERVICES IN PHOENIX</h4>
+            <p id="manicure">IT’S NOT SELFISH TO LOVE YOURSELF, TAKE CARE OF YOURSELF, AND TO MAKE YOUR HAPPINESS A PRIORITY. IT’S NECESSARY</p>
+
+            <p>At Tat's Nails, we offer individual approach to each client, safe environment, excellent service. Please see the service menu below for add on options.
+            </p>
+            <p>Planning to book an appointment ? <br><a href="/gform.html"> Calculate</a> your service fee and receive the first visit discount</p>
+
+        </div>
+        <div class="serv3">
+            <h4>Additional services</h4>
+
+            <div class="pricelist">
+                <p>Gel Removal .............................................................. 15 min / 10$</p>
+                <p> Performed with e-file in a very safe manner. No acetone removals. </p>
+                <p>Performed with e-file in a very safe manner. No acetone removals. We only remove old material with e-file to avoid harmful odors or skin irritation from acetone products. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Nail Repair ................................................................. 10 min / 50$</p>
+                <p> Let's Fix It. Price Per Nail.</p>
+                <p>Let's Fix It. Price Per Nail.</p>
+            </div>
+
+            <div class="pricelist">
+                <p>Hand or Foot Massage ................................................................................... 10 min / 10$</p>
+                <p> Relaxation & Rejuvenating</p>
+                <p>May be requested with any manicure or pedicure service besides the Spa Procedures. Improves blood circulation and skin tone. </p>
+            </div>
+
+            <div class="pricelist">
+                <p>Hot Stone Massage .................................................. 10 min / 10$</p>
+                <p> Stress relieve & muscle tension</p>
+                <p>May be requested with any pedicure service except the Spa Procedure. Improves blood circulation and skin tone. </p>
+            </div>
+
+        </div>
+        <div class="serv4">
+            <div class="serv1additionalimg2"></div>
+        </div>
+
+    </div>
+
+    <!--Calculate-->
+    <script>
+        fetch('calculate.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('calculateinclude').innerHTML = txt)
+    </script>
+    <div id="calculateinclude"></div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

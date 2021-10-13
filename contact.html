@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+
+    <div class="contactwrapper">
+        <div class="cont1">
+            <h3>Need a great Euro Style nail service, your magical transformation is waiting for you at Tat's Nails! </h3>
+        </div>
+
+        <div class="cont2">
+            <div class="pic-ctn">
+                <img src="img/saloons/salooncarusel1.jpg" alt="" class="pic">
+                <img src="img/saloons/salooncarusel2.jpg" alt="" class="pic">
+                <img src="img/saloons/salooncarusel3.jpg" alt="" class="pic">
+                <img src="img/saloons/salooncarusel6.jpg" alt="" class="pic">
+                <img src="img/saloons/salooncarusel5.jpg" alt="" class="pic">
+            </div>
+
+        </div>
+        <div class="cont3">
+            <p><img src="img/clock.png"> Hours Of Operation North Phoenix location: <br> Monday - Friday 11:00 AM to 7:00 PM <br> Saturday 10:00 AM to 3:00 PM <br> Sunday Closed </p>
+            <p><img src="img/point.png"> Adress: <br> North Phoenix By Appointment Only 13606 N 17th Place, Ste. 1 Phoenix, AZ 85022<br><br> Central Phoenix 2302 N Central Ave. Ste. 7B Phoenix, AZ 85004
+
+            </p>
+            <p><img src="img/call.png"> <a href="tel+16027538551"> Book for both locations by calling at +1 (602) 753-8551
+        </a></p>
+
+        </div>
+        <div class="cont4">
+
+            <p>
+                <br> At Tat's Nails we offer to our clients quality services and a unique atmosphere of warmth and care. <br> Our qualified nail techs will professionally perform procedures while observing all sterilization & disinfection standards. <br>                We make our clients' comfort our priority and our experienced and attentive team will make sure to inform our clients about the stages and purposes of any procedure. <br> When it comes to colors and designs, we offer a wide color palette
+                of shades so we can implement clients' ideas for nail design whether they prefer a more neutral everyday solution or bright and unusual look for for a specific event and image. <br> The cost of our services has the ideal ratio of price
+                and quality and we also offer several opportunities to receive discounted pricing for our regular and new customers. <br> If you have any questions, please feel the form on the right or call us directly and we will be happy to give an
+                initial consultation, make an appointment and/or answer any questions you might have.
+
+            </p>
+
+            </p>
+        </div>
+        <div class="cont5">
+            <!--Form-->
+            <script>
+                fetch('form.html')
+                    .then(res => res.text())
+                    .then(txt => document.getElementById('form').innerHTML = txt)
+            </script>
+            <div id="form"></div>
+        </div>
+
+    </div>
+
+    <div class=content6>
+        <div class="content6-wrapper">
+            <div class="content6-text">
+                <p>Special Offer #3</p>
+                <p>Buy a package combining the Russian gel manicure & gel pedicure service and receive $10.00 off your service.
+                </p>
+            </div>
+            <div class="content6-buton">
+                <a href="#"><button>Claim My Discount</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.071082278792!2d-112.0763734846505!3d33.473500080767316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b1242fc166b65%3A0xd67cbdad9f2609ec!2zMjMwMiBOIENlbnRyYWwgQXZlLCBQaG9lbml4LCBBWiA4NTAwNCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1629883619071!5m2!1sru!2sru"
+            width="90%" height="800" style="border:1px solid #ccc;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>

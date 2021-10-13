@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        How to temporarily fix a chipped nail polish.
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/blog1.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+
+        With ordinary varnish, everything is very simple. You will need a regular sticker - absolutely any, even from a
+        children's album, and a transparent varnish. Stick the sticker over the chip and apply clear varnish on top.
+        Ready!<br>
+        <br>
+        If the gel polish is chipped, it will be more difficult to "mask" the damage. But if you want, nothing is
+        impossible. As a rule, most often the gel polish is chipped off at the free edge of the nail. In such a
+        situation, it is enough just to arm yourself with a nail file and file the desired area.<br>
+        <br>
+        To hide damage in another area, it is enough to pick up a regular varnish of the same color, apply a couple of
+        layers and cover with a top.<br>
+        <br>
+        And, of course, the problem is easier to prevent than "cure". Remember that the varnish can chip not only from
+        mechanical stress, but also from prolonged contact with water. Strict adherence to technology when processing
+        nails and applying coating is also important. Therefore, it is so important to trust the hands of only an
+        experienced specialist.<br>
+        <br>
+        A chipped nail polish is a very unpleasant and even annoying, but, unfortunately, a common situation. If you are
+        faced with the same situation - stop, do not rush to get upset! Here are some helpful tips on how to fix things
+        quickly.
+
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Should Your Nails Take A Break From Gel Polish?
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/imgpost5.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+
+        The nail plate consists of dead epithelial cells, or, simply put, the skin, which turn into horny nail plates.
+        Since these are keratinized cells, they do not need to “breathe”. Accordingly, no matter how often you apply the
+        coating to the nail plate, this will not affect its structure in any way. Therefore, a break from gel polish is
+        not needed for nails.
+        <br>
+        <br>
+        Another thing is how the gel coating is removed. Violation of technology can really adversely affect the
+        condition of the nails. They can become thin and brittle and will require recovery. If your nail tech does
+        everything correctly, then the gel polish coating will not ruin the nails, but, on the contrary, will protect
+        them from external influences. There is also the opinion that the the nail plate is completely filed down before
+        gel polish application which makes the plate very thin. Only the surface of old material is supposed to be filed
+        down if the technology is followed correctly by your nail technician and the actual nail plate remains
+        untouched.
+        <br>
+        <br>
+        So, to summarize: there is no need to be afraid of gel polish - it is absolutely safe for your nails. The main
+        thing is to do a manicure clearly in compliance with the technology, and for this you should choose only
+        high-quality gel polish and trust your hands only to an experienced nail specialist.
+
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

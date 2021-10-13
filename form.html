@@ -1,0 +1,18 @@
+<form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mleapgbg" method="post">
+    <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+        <label for="department">Location</label>
+        <select name="department" id="department" required="">
+            <option value="Select" selected="" disabled="">Select</option>
+            <option value="Front Desk">X North Phoenix</option>
+            <option value="Customer Care">X Central Phoenix</option>
+        </select>
+        <label for="telephone">Telephone Number</label>
+        <input type="telephone" name="telephone" id="telephone" placeholder="(XXX) XXX-XXXX">
+        <label for="complaint">Enter your text here</label>
+        <textarea rows="6" name="complaint" id="complaint" placeholder="Your text." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Send Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>

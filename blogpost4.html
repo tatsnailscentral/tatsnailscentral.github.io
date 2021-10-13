@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="index.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Tat's Nails on Central Phoenix</title>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup_bg"></div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Full name">
+        <input type="text" placeholder="Telephone number">
+        <textarea></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </div>
+  <!--Header-->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('root').innerHTML = txt)
+  </script>
+  <div id="root"></div>
+  <div class="blogpostheader">
+    <div class="blogpostheader1">
+      <h4>
+        Children's manicure
+      </h4>
+    </div>
+    <div class="blogpostheader2">
+      <img src="/img/imgpost4.jpg">
+    </div>
+  </div>
+  <div class="blogpostconvert">
+    <div class="blogpost">
+
+      <br>
+
+      <p>
+
+        Many parents are concerned about this issue. After all, almost every little girl, watching her mother's
+        beautiful and well-groomed hands, asks her to do the same. At what age can you begin to professionally care for
+        children's hands, do a manicure, apply polish or gel polish? The baby's hands are taken care of from the very
+        birth. During this period, it is more hygienic: the mother cuts the baby's nails and cleans them. The formation
+        of the nail plate occurs until 14-16 years of age in humans, this type of care should be carried out as long as
+        possible.
+        <br>
+        <br>
+        However, even at preschool age, many girls ask to paint their nails, and at an older age even to build up or
+        cover them with gel polish. At what age can you start doing this? Experts recommend using only regular nail
+        polishes until the age of 12 since they do not require special treatment of the nail plate prior to application.
+        As for building and covering with “adult” gel polish, it is recommended to do it after the age of 16-17. The
+        same goes for edged manicures. Early use of gel polishes may lead to coarse cuticles, dryness, and will not
+        prevent from the biting habit in children.
+      </p>
+
+    </div>
+  </div>
+
+  <!--More Post-->
+  <script>
+    fetch('morepost.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('morepost').innerHTML = txt)
+  </script>
+  <div id="morepost"></div>
+
+  <div class=content6>
+    <div class="content6-wrapper">
+      <div class="content6-text">
+        <p>Special Offer #1</p>
+        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+      </div>
+      <div class="content6-buton">
+        <a href="/yaform.html"><button>Claim My Discount</button></a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+  </script>
+  <div id="footerinclude"></div>
+
+</body>
+
+</html>

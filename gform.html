@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <script src="popup.js"></script>
+    <script src="https://kit.fontawesome.com/dd6225d123.js" crossorigin="anonymous"></script>
+    <title>Tat's Nails on Central Phoenix</title>
+
+</head>
+
+
+<body>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <p>Feedback form</p>
+
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea style="margin: -1px; width: 301px; height: 90px;"></textarea><br>
+                <div class="check">
+                    <input type="checkbox" name="policy">
+                    <p>I'm reading <a href="/policy.html">POLICY</a></p>
+                </div>
+                <input type="submit" value="Send">
+                <br>
+                <hr>
+                <p>Special Offer #2</p>
+                <p>Leave us a review on either Google, Facebook, or Instagram on the day of your service and receive one of our available designs on two finger nails for free during your next visit.</p>
+            </form>
+        </div>
+    </div>
+
+
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('headerinclude').innerHTML = txt)
+    </script>
+    <div id="headerinclude"></div>
+
+
+    <iframe style="margin: 100px 350px;" src="https://docs.google.com/forms/d/e/1FAIpQLSfnUwTKMC0V-_TT_zjEK7eQcSw8DMW9ATIOJfNIzLMgeCGDcg/viewform?embedded=true" width="640" height="2100" frameborder="2" marginheight="10" marginwidth="10">Загрузка…</iframe>
+
+
+
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
+
+</body>
+
+</html>
