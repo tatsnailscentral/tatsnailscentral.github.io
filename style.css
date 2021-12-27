@@ -1972,6 +1972,31 @@ Media Queries   - - - - */
     font-size: 14px;
 }
 
+.servwrapper2 {
+    width: 1040px;
+    margin: 50px auto;
+    text-align: center;
+    display: grid;
+    grid-template: [start] "serv2img1 serv2img2 serv2img3" 400px [row2] [row3] "serv2img4 serv2img5 serv2img6" 400px [row-end] / 1fr 1fr 1fr;
+    border: 2px dashed #ccc;
+}
+
+.serv2img1,
+.serv2img2,
+.serv2img3,
+.serv2img4,
+.serv2img5,
+.serv2img6 {
+    border: 1px solid #000;
+    margin: 5px 10px;
+}
+
+.manicure1 {
+    background-image: url(img/work/manicure/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /*BLOG*/
 
