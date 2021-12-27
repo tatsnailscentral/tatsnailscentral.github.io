@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /*
+
+
+Sitemap: https://tatsnails.com/sitemap_index.xml

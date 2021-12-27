@@ -2,93 +2,86 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="index.html" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="img/favicon.png">
-  <title>Tat's Nails on Central Phoenix</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="index.html" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tat's Nails on Central Phoenix</title>
 </head>
 
 <body>
-  <div class="popup">
-    <div class="popup_bg"></div>
-    <div class="form">
-      <form>
-        <input type="text" placeholder="Full name">
-        <input type="text" placeholder="Telephone number">
-        <textarea></textarea>
-        <input type="submit" value="Send">
-      </form>
+    <div class="popup">
+        <div class="popup_bg"></div>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Full name">
+                <input type="text" placeholder="Telephone number">
+                <textarea></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
     </div>
-  </div>
-  <!--Header-->
-  <script>
-    fetch('header.html')
-      .then(res => res.text())
-      .then(txt => document.getElementById('root').innerHTML = txt)
-  </script>
-  <div id="root"></div>
-  <div class="blogpostheader">
-    <div class="blogpostheader1">
-      <h4>
-        Five "No" Before Going To Your Nail Tech
-      </h4>
+    <!--Header-->
+    <script>
+        fetch('header.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('root').innerHTML = txt)
+    </script>
+    <div id="root"></div>
+    <div class="blogpostheader">
+        <div class="blogpostheader1">
+            <h4>
+                Five "No" Before Going To Your Nail Tech
+            </h4>
+        </div>
+        <div class="blogpostheader2">
+            <img src="/img/blog2.jpg">
+        </div>
     </div>
-    <div class="blogpostheader2">
-      <img src="/img/blog2.jpg">
+    <div class="blogpostconvert">
+        <div class="blogpost">
+
+            <br>
+
+            <p>
+                And did you know that the reason is not always the bad nail job? In this article you will learn what absolutely must not be done before going to the nail salon. These simple rules will help you not to ruin your nails and make the work of your nail tech
+                easier.
+                <br>
+                <br> Do not remove the old gel coating yourself. Remember: it is not gel polish that ruins the nails, but its improper removal. By doing this, you can damage the nail plate. Please refrain from doing your nails at home before going to
+                the nail salon. Do not file the nails or trim your cuticles. In order to have long lasting gel manicure and avoid liftings, try not to apply cuticle oil on the day of the manicure, especially if you plan to have an E-File manicure. Please
+                leave any nail issues for nail pros. Compliance with these simple rules will protect your hands from damage and, often, difficult-to-reverse consequences.
+            </p>
+
+        </div>
     </div>
-  </div>
-  <div class="blogpostconvert">
-    <div class="blogpost">
 
-      <br>
+    <!--More Post-->
+    <script>
+        fetch('morepost.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('morepost').innerHTML = txt)
+    </script>
+    <div id="morepost"></div>
 
-      <p>
-        And did you know that the reason is not always the bad nail job? In this article you will learn what absolutely
-        must not be done before going to the nail salon. These simple rules will help you not to ruin your nails and
-        make the work of your nail tech easier.
-        <br>
-        <br>
-        Do not remove the old gel coating yourself. Remember: it is not gel polish that ruins the nails, but its
-        improper removal. By doing this, you can damage the nail plate. Please refrain from doing your nails at home
-        before going to the nail salon. Do not file the nails or trim your cuticles. In order to have long lasting gel
-        manicure and avoid liftings, try not to apply cuticle oil on the day of the manicure, especially if you plan to
-        have an E-File manicure. Please leave any nail issues for nail pros. Compliance with these simple rules will
-        protect your hands from damage and, often, difficult-to-reverse consequences.
-      </p>
+    <div class=content6>
+        <div class="content6-wrapper">
+            <div class="content6-text">
+                <p>Special Offer #1</p>
+                <p>Refer a friend and receive 10% off your entire service following their first service.</p>
+            </div>
 
+        </div>
     </div>
-  </div>
-
-  <!--More Post-->
-  <script>
-    fetch('morepost.html')
-      .then(res => res.text())
-      .then(txt => document.getElementById('morepost').innerHTML = txt)
-  </script>
-  <div id="morepost"></div>
-
-  <div class=content6>
-    <div class="content6-wrapper">
-      <div class="content6-text">
-        <p>Special Offer #1</p>
-        <p>Refer a friend and receive 10% off your entire service following their first service.</p>
-      </div>
-      <div class="content6-buton">
-        <a href="/yaform.html"><button>Claim My Discount</button></a>
-      </div>
-    </div>
-  </div>
-  <!--Footer-->
-  <script>
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(txt => document.getElementById('footerinclude').innerHTML = txt)
-  </script>
-  <div id="footerinclude"></div>
+    <!--Footer-->
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('footerinclude').innerHTML = txt)
+    </script>
+    <div id="footerinclude"></div>
 
 </body>
 
