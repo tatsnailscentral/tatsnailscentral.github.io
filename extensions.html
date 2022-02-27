@@ -87,14 +87,13 @@
         </div>
 
     </div>
-    <div class="content6">
-        <div class="content6-wrapper">
-            <div class="content6-text">
-                <p>Have you been to Tat's Nails Yet ? </p>
-            </div>
 
-        </div>
-    </div>
+    <script>
+        fetch('calculate.html')
+            .then(res => res.text())
+            .then(txt => document.getElementById('calculateinclude').innerHTML = txt)
+    </script>
+    <div id="calculateinclude"></div>
 
     <!--Footer-->
     <script>
